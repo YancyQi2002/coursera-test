@@ -60,8 +60,13 @@ body {
 }
 
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-  border: 1px solid #ebedef;
+  border: 1px solid #000;
   background-color: #999999;
+}
+
+.navbar-header button.navbar-toggle:hover, .navbar-header .icon-bar:visited,
+.navbar-header .icon-bar:hover {
+  border: 1px solid #dcdcdc;
 }
 
 .navbar-header button.navbar-toggle {
@@ -82,7 +87,10 @@ ul {
 }
 
 #menu3 {
-	border:1px solid black;
+  border-top: 1px solid black;
+	border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 2px solid black;
 }
 
 .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
@@ -137,6 +145,10 @@ p {
 	.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
 		margin-left: 6px;
 	}
+
+  .col-md-4 {
+    width: 26%;
+  }
 }
 
 /********** Medium devices only **********/
@@ -152,6 +164,10 @@ p {
 	.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
 		margin-left: -10px;
 	}
+
+  .col-md-4 {
+    width: 26%;
+  }
 }
 
 /********** Small devices only **********/
@@ -167,6 +183,10 @@ p {
 	.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
 		margin-left: -10px;
 	}
+
+  .col-sm-6 {
+    width: 42%;
+  }
 }
 
 /********** Extra small devices only **********/
@@ -201,6 +221,11 @@ p {
   .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
 	margin-left: 10px;
   }
+
+  .navbar-header button.navbar-toggle:hover, .navbar-header .icon-bar:visited,
+  .navbar-header .icon-bar:hover {
+    border: 1px solid #dcdcdc;
+  }
   /* End Header */
 }
 
@@ -213,3 +238,4 @@ p {
   }
   /* End Header */
 }
+
