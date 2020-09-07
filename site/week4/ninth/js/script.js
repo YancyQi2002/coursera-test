@@ -1,0 +1,20 @@
+function test() {
+	console.log(this);
+	this.myName = "Yancy Qi";
+}
+test();
+console.log(window.myName);
+
+// Function constructors
+function Circle (radius) {
+	this.radius = radius;
+}
+Circle.prototype.getArea = function () {
+	return Math.PI * Math.pow(this.radius,2);
+};
+
+var myCircle = new Circle(10); // new Object();
+console.log(myCircle.getArea());
+
+var myOtherCicle = new Circle(20);
+console.log(myOtherCicle);
